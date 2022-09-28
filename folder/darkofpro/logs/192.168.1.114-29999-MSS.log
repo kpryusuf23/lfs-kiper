@@ -1,0 +1,68 @@
+4/30/2021 7:29:29 PM -> Connecting to 192.168.1.114 / 29999 
+Connection OK
+30.04.2021 19:29:30 -> InSImReceive Thread Started...
+-----------------------------------------------------------------------------
+4/30/2021 7:29:30 PM
+-----------------------------------------------------------------------------
+4/30/2021 7:29:30 PM -> Parsing config file...Ok
+4/30/2021 7:29:30 PM -> Loading WR...Not Loaded
+4/30/2021 7:29:30 PM -> Loading swearwords...Ok
+4/30/2021 7:29:30 PM -> Connecting to 192.168.1.114 / 29999 
+Connection OK
+30.04.2021 19:29:30 -> 4/30/2021 7:29:30 PM -> Product:DEMO Version:0.6U InSim Version:8
+30.04.2021 19:29:31 -> Ftp Upload grip DB Thread Started...
+30.04.2021 19:29:31 -> Ftp Upload drift DB Thread Started...
+InSImReceive Thread Started...
+30.04.2021 19:29:31 -> 4/30/2021 7:29:31 PM -> 30.04.2021 19:29:31 -> LFSLapper is running...
+30.04.2021 19:29:31 -> Register Web Thread Started...
+Web Commands Thread Started...
+PubStat Thread Started...
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+4/30/2021 7:29:31 PM -> Warning packet not catched (ACR)
+4/30/2021 7:29:31 PM -> Warning packet not catched (ACR)
+4/30/2021 7:29:36 PM -> Warning packet not catched (ACR)
+4/30/2021 7:30:22 PM -> Warning packet not catched (NCI)
+4/30/2021 7:30:22 PM -> Warning packet not catched (SLC)
+4/30/2021 7:30:22 PM -> Warning packet not catched (ACR)
+4/30/2021 7:30:22 PM -> Warning packet not catched (ACR)
+4/30/2021 7:30:22 PM -> Warning packet not catched (ACR)
+4/30/2021 7:30:27 PM -> Warning packet not catched (ACR)
+4/30/2021 7:30:53 PM -> Connecting to 192.168.1.114 / 29999 
+Connection OK
+4/30/2021 7:31:45 PM -> Connecting to 192.168.1.114 / 29999 
+Connection OK
+30.04.2021 19:31:45 -> InSImReceive Thread Started...
+-----------------------------------------------------------------------------
+4/30/2021 7:31:46 PM
+-----------------------------------------------------------------------------
+4/30/2021 7:31:46 PM -> Parsing config file...Ok
+4/30/2021 7:31:46 PM -> Loading WR...Not Loaded
+4/30/2021 7:31:46 PM -> Loading swearwords...Ok
+4/30/2021 7:31:46 PM -> Connecting to 192.168.1.114 / 29999 
+Connection OK
+30.04.2021 19:31:46 -> 4/30/2021 7:31:46 PM -> Product:DEMO Version:0.6U InSim Version:8
+30.04.2021 19:31:46 -> Ftp Upload grip DB Thread Started...
+30.04.2021 19:31:46 -> Ftp Upload drift DB Thread Started...
+InSImReceive Thread Started...
+30.04.2021 19:31:46 -> 4/30/2021 7:31:46 PM -> 30.04.2021 19:31:46 -> LFSLapper is running...
+PubStat Thread Started...
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+30.04.2021 19:31:46 -> Register Web Thread Started...
+Web Commands Thread Started...
+4/30/2021 7:31:47 PM -> Warning packet not catched (ACR)
+4/30/2021 7:31:47 PM -> Warning packet not catched (ACR)
+4/30/2021 7:31:52 PM -> Warning packet not catched (ACR)
+4/30/2021 7:31:52 PM -> Warning packet not catched (NCI)
+4/30/2021 7:31:52 PM -> Warning packet not catched (SLC)
+4/30/2021 7:31:52 PM -> Warning packet not catched (ACR)
+4/30/2021 7:31:52 PM -> Warning packet not catched (ACR)
+4/30/2021 7:31:52 PM -> Warning packet not catched (ACR)
+4/30/2021 7:31:57 PM -> Warning packet not catched (ACR)
+4/30/2021 7:32:09 PM -> Warning packet not catched (ACR)
+4/30/2021 7:32:16 PM -> Warning packet not catched (CSC)
+4/30/2021 7:33:33 PM -> Warning packet not catched (CSC)
+4/30/2021 7:33:35 PM -> Warning packet not catched (CSC)
