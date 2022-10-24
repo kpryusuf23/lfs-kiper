@@ -1,0 +1,71 @@
+CatchEvent OnLapperStart()
+	GlobalVar $DebugOn;
+	$DebugOn = FALSE;
+EndCatchEvent
+
+Sub closeButtonRegex( $userName, $exp )
+	$lob = getListOfPlayerButtons( $userName );
+    FOREACH ( $de in $lob )
+        $nameOfButton = $de["value"];
+        IF ( isRegexMatch( $exp, $nameOfButton ) == 1 ) THEN
+            closeButton( $userName, $nameOfButton );
+        ENDIF
+	ENDFOREACH
+EndSub
+
+Sub ButtonExists( $userName, $ButtonToFind )
+	$lob = getListOfPlayerButtons( $userName );
+    FOREACH ( $de in $lob )
+        $nameOfButton = $de["value"];
+        IF ( isRegexMatch( $ButtonToFind, $nameOfButton ) == 1 ) THEN
+            return(1);
+        ENDIF
+	ENDFOREACH
+	return(0);
+EndSub
+
+Sub adminMsg( $msg )
+	$lop = getListOfPlayers( $userName );
+    FOREACH ( $de in $lop )
+        $userName = $de["value"];
+        IF ( UserIsAdmin( $userName ) == 1 )
+		THEN
+			privMsg( $userName,"^7AdminMsg: ^8" . $msg );
+		ENDIF
+	ENDFOREACH
+EndSub
+
+Sub DialogCreate ( $userName, $DialogPrefix, $origL, $origT, $Width, $Height, $Title, $showClose, $secondsDisplayed)
+	# Draw window titles with Prev, Next and Close buttons
+	openButton ( $userName, $DialogPrefix . "_bg1",$origL-1,$origT-10,$Width+2,$Height+18,1,$secondsDisplayed,ISB_LIGHT,"");
+	openButton ( $userName, $DialogPrefix . "_bg2",$origL-1,$origT-10,$Width+2,$Height+18,1,$secondsDisplayed,ISB_LIGHT,"");
+	openButton ( $userName, $DialogPrefix . "_title",$origL,$origT-9,$Width,9,5,$secondsDisplayed,ISB_LEFT,"^0" . $Title );
+
+	IF ( $showClose == true )
+	THEN
+		openButton ( $userName, $DialogPrefix . "_close",87,$origT+$Height+1,26,6,8,$secondsDisplayed,ISB_LIGHT,"^0[  Close  ]",DialogClose );
+	ENDIF
+
+	# Draw the main contents window on top of the titles
+	openButton ( $userName, $DialogPrefix . "_contents_bg",$origL,$origT,$Width,$Height,1,-1,ISB_DARK,"");
+
+EndSub
+
+Sub DialogClose ( $KeyFlags, $id )
+	$userName = GetCurrentPlayerVar("UserName");
+	$DialogPrefix = split( $id,"_",0 );
+	closeButtonRegex ($userName, $DialogPrefix . ".*");
+EndSub
+
+Sub DEBUG ($msg)
+	IF ( $DebugOn > 0 )
+	THEN
+		$ListOfPlayers = GetListOfPlayers("N");
+		FOREACH ( $Player IN $ListOfPlayers)
+			IF ( UserIsAdmin( $Player["value"] ) == 1 )
+			THEN
+				privMsg( $Player["value"], "^7DEBUG: ^8" . $msg );
+			ENDIF
+		ENDFOREACH
+	ENDIF
+EndSub

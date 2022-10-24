@@ -1,0 +1,48 @@
+# Author: Yisc[NL]																#
+# Lapper version needed: 7.0.4.10 or above													#
+#																		#
+# Language selection V1.00	03-03-2018	-Initial version										#
+#################################################################################################################################################
+
+CatchEvent OnConnect( $userName ) # Player event
+	OnConnect_Language_selection();
+EndCatchEvent
+
+Sub OnConnect_Language_selection()
+	### Set left/right and top/bottom coordinates ###
+	$left_right_lang_select=70;
+	$top_bottom_lang_select=95;
+	### End ###
+
+	### Draw buttons with the available languages and go to Sub 'selected_lang' when one of the buttons is clicked ###
+	openPrivButton( "lang_spanish",$left_right_lang_select+1,$top_bottom_lang_select,20,5,5,-1,32,"^3Spanish",selected_lang );
+	openPrivButton( "lang_portuguese",$left_right_lang_select+21,$top_bottom_lang_select,20,5,5,-1,32,"^3Portuguese",selected_lang );
+	openPrivButton( "lang_english",$left_right_lang_select+41,$top_bottom_lang_select,20,5,5,-1,32,"^3English",selected_lang );
+	### End ###
+EndSub
+
+Sub selected_lang ( $KeyFlags,$id )
+	PrivMsg ( "^7DEBUG - selected language is: " . $id );
+
+	### $id is equal to 'lang_spanish' do something ###
+	IF ( $id == "lang_spanish" )
+	THEN
+	ENDIF
+	### End ###
+
+	### $id is equal to 'lang_portuguese' do something ###
+	IF ( $id == "lang_portuguese" )
+	THEN
+	ENDIF
+	### End ###
+
+	### $id is equal to 'lang_english' do something ###
+	IF ( $id == "lang_english" )
+	THEN
+	ENDIF
+	### End ###
+
+	### Close the previously drawn language selection buttons ###
+	closePrivButton( "lang_spanish&lang_portuguese&lang_english" );
+	### End ###
+EndSub
